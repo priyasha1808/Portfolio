@@ -7,35 +7,273 @@
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
-<body>
-    <nav id="desktop-nav">
-        <div class="logo">Priyasha J</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#certificates">Certifications</a></li>
-            </ul>
-        </div>
-    </nav>
-    <nav id="ham-nav">
-        <div class="logo">Priyasha J</div>
-        <div class="ham-menu">
-            <div class="ham-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
+<body background="./assets/14546395_rm183-wan-11.jpg">
+    <div id="home">
+        <nav id="desktop-nav">
+            <div class="logo">Priyasha J</div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                </ul>
             </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-                <li><a href="#certificates" onclick="toggleMenu()">Certifications</a></li>
+        </nav>
+        <nav id="ham-nav">
+            <div class="logo">Priyasha J</div>
+            <div class="ham-menu">
+                <div class="ham-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#skills" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Contact</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Certifications</a></li>
+                    <li><a href="#certifications" onclick="toggleMenu()">Certifications</a></li>
+                </div>
+            </div>
+        </nav>
+    
+    
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/mine.jpg" alt="Priyasha profile pic">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I am</p>
+            <h1 class="title">Priyasha</h1>
+            <p class="section__text__p2">Student</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Priyasha Resume wihtout pic final.pdf')";>Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'";>Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="linkedin profile" class="icon" onclick="location.href='https://linkedin.com/in/priyasha1808/'"/>
+                <img src="./assets/github.png" alt="github profile" class="icon" onclick="location.href='https://github.com/priyasha1808/'"/>
             </div>
         </div>
+    </section>
 
-    </nav>
+    <section id="about">
+        <p class="section__text__p1">Get to Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about.jpg" alt="profile pic" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-container">
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="education icon" class="icon">
+                        <h3>EDUCATION</h3>
+                        <p>B.E. Computer Science and Engineering <br> CGPA 7.59</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon">
+                        <h3>EDUCATION</h3>
+                        <p>HSC 94.23%<br> SSLC 96%</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p style="color: white;">Skilled graduate with fundamental knowledge of software design and coding. 
+                        Seeking to utilize broad educational background with excellent technical, 
+                        and programming skills to thrive as an entry- level software engineer. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#skills'">
+    </section>
+    <section id="skills">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="skills-details-containers">
+            <div class="about-container">
+                <div class="details-container">
+                    <h2 class="skills-sub-title">Programming Skills</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" class="icon">
+                            <div>
+                                <h3>JAVA</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" class="icon">
+                            <div>
+                                <h3>C</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" class="icon">
+                            <div>
+                                <h3>C++</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="skills-sub-title">Web Technologies</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" class="icon">
+                            <div>
+                                <h3>NodeJS</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" class="icon">
+                            <div>
+                                <h3>Angular</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br> 
+        <h1 class="title">Area of Interest</h1>
+        <div class="skills-details-containers">
+            <div class="about-container">
+                <div class="details-container">
+                    <h2 class="skills-sub-title"></h2>
+                    <div class="article-container-2">
+                        <article>
+                            <img src="./assets/checkmark.png" class="icon">
+                            <div>
+                                <h3>Exploring cloud Services</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" class="icon">
+                            <div>
+                                <h3>Learning Devops Tools</h3>
+                            </div>
+                        </article>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="skills-details-containers">
+            <div class="about-container">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/Screenshot (250).png" class="project-img">
+                        <h2 class="skills-sub-title project-title">Games using HTML, CSS and Javascript</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/priyasha1808/Games.git'">Github</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/Screenshot (251).png" class="project-img">
+                        <h2 class="skills-sub-title project-title">Ice cream ordering portal using Angular and NodeJS</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/priyasha1808/ice-cream-portal.git'">Github</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/top view.jpg" class="project-img">
+                        <h2 class="skills-sub-title project-title">Bluetooth Car</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/priyasha1808/Bluetooth-car.git'">Github</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#certifications'">
+    </section>
+    <section id="certifications">
+        <p class="section__text__p1">View My</p>
+        <h1 class="title">Certifications</h1>
+        <div class="certifications">
+            <div class="about-container">
+                <div class="details-container">
+                    <div class="article-container-cert">
+                        <article>
+                            <img src="./assets/checkmark.png" class="icon">
+                            <div>
+                                <a href="https://www.linkedin.com/posts/priyasha1808_aws-certified-cloud-practitioner-was-issued-activity-7155980614926565376-xQP-?utm_source=share&utm_medium=member_desktop"><h3>AWS Cloud Practitioner</h3></a>
+                            </div>
+                        </article>
+                        <br><br>
+                        <article>
+                            <img src="./assets/checkmark.png" class="icon">
+                            <div>
+                                <a href="https://www.linkedin.com/in/priyasha1808/details/certifications/1704465842622/single-media-viewer?type=IMAGE&profileId=ACoAAESHyfkBh5dhPv_sC_Gj1uptr2FKMC-HbDs&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BpQ0AXahrRxiyH8t9Gk1QFg%3D%3D"><h3>NPTEL certification in problem solving through programming in C</h3></a>
+                            </div>
+                        </article>
+                        <br><br>
+                        <article>
+                            <img src="./assets/checkmark.png" class="icon">
+                            <div>
+                                <a href="https://www.linkedin.com/in/priyasha1808/details/certifications/1726177403895/single-media-viewer?type=IMAGE&profileId=ACoAAESHyfkBh5dhPv_sC_Gj1uptr2FKMC-HbDs&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BpQ0AXahrRxiyH8t9Gk1QFg%3D%3D"><h3>NPTEL certification in Industrial
+                                    Internet of Things</h3></a>
+                            </div>
+                        </article>
+                        <br><br>
+                        <article>
+                            <img src="./assets/checkmark.png" class="icon">
+                            <div>
+                                <a href="https://www.linkedin.com/posts/priyasha1808_programming-using-java-activity-7149046365635944449-Gyhj?utm_source=share&utm_medium=member_desktop"><h3>Infosys springboard : Java Learning Path</h3></a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" class="icon contact-icon email-icon">
+                <p><a href="mailto:priyashajaganmohan2004@gmail.com">priyashajaganmohan2004@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/priyasha1808">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
+    </div>
+        
+    
+        
     <script src="script.js"></script>
 </body>
 </html>
